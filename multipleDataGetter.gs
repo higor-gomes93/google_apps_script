@@ -1,6 +1,7 @@
 /*
-Este script cria pastas dentro de um diretório principal.
-O objetivo é definir uma lista de nomes de pastas e criá-las automaticamente num diretório definido.
+Este script coleta respostas de múltiplas planilhas em múltiplas pastas.
+O objetivo é definir um diretório central, listar as pastas dentro dele, e na sequência listar todas as planilhas
+dentro das subpastas. Por fim, o script coleta os dados de todas as planilhas.
 */
 
 function coletorPastas() {
