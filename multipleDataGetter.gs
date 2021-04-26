@@ -57,6 +57,7 @@ function coletorDados(fileId) {
 }
 
 function coletorNomes(fileId) {
+  // Função para personalizar uma string de nomes. Pode ser dispensável
   // Coletando o nome da planilha
   const rawName = DriveApp.getFileById(fileId).getName().toString();
   const name = rawName.split(" - ")[1];
@@ -78,6 +79,7 @@ function registroDados(data, names) {
   
   // Inserindo os dados
   mainSheet.getRange(mainstartRow+1, mainstartColumn+1, mainendRow, mainendColumn).setValues(data);
+  // Pode ser dispensável
   mainSheet.getRange(mainstartRow+1, mainstartColumn, mainendRow, 1).setValue(names);
 }
 
