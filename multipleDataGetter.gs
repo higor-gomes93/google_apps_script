@@ -1,3 +1,8 @@
+/*
+Este script cria pastas dentro de um diretório principal.
+O objetivo é definir uma lista de nomes de pastas e criá-las automaticamente num diretório definido.
+*/
+
 function coletorPastas() {
   // Definindo a pasta de respostas
   const folder = DriveApp.getFolderById("[FOLDER_ID]");
