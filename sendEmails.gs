@@ -1,3 +1,9 @@
+/*
+Este script envia e-mails automaticamente e compartilha um arquivo.
+O objetivo é enviar um e-mail automaticamente para uma lista de pessoas, e compartilhar um
+arquivo com permissões de editor.
+*/
+
 function SendEmails() {
   // Definindo a planilha
   var sheet = SpreadsheetApp.getActive().getSheetByName("[SHEET_NAME]");    
@@ -14,6 +20,7 @@ function SendEmails() {
     var planilha = row[3].toString();                                                               
     var options = {htmlBody: message};                                             
 
+    // Enviando os e-mails
     if(check != "ENVIADO" & subject != ""){
       var id = SpreadsheetApp.openByUrl(planilha).getId();
       DriveApp.getFileById(id).addEditor(email_destinatario);
