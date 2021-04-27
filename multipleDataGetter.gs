@@ -69,7 +69,7 @@ function coletorNomes(fileId) {
 
 function registroDados(data, names) {
    // Definindo a planilha destino
-  const mainSpreadsheetId = "1RtPiORyQqR1eyq7_n8BPuLK9JeEX3FgVKBfGfM0_ns8";
+  const mainSpreadsheetId = "[SHEET_ID]";
   const mainSheetName = "Dataset";
   const mainSheet = SpreadsheetApp.openById(mainSpreadsheetId).getSheetByName(mainSheetName);
   const mainstartRow = mainSheet.getLastRow();
